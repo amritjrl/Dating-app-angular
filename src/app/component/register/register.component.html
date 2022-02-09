@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="container-fluid">
+    <form class="row g-3" #signin="ngForm" (ngSubmit)="onSubmit(signin.value)">
+      <div class="col-md-6">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" ngModel />
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" ngModel />
+      </div>
+      <div class="col-12">
+        <label class="form-label">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          ngModel
+          class="form-control"
+          placeholder="Hari"
+        />
+      </div>
+      <div class="col-12">
+        <label class="form-label">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Thapa"
+          name="lastName"
+          ngModel
+        />
+      </div>
+      <div class="col-10">
+        <label class="form-check-inline">Gender</label>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="gender"
+              value="male"
+              ngModel
+            />Male
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="gender"
+              value="female"
+              ngModel
+            />Female
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </form>
+  </div>
+</div>

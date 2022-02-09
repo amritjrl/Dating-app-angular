@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="container-fluid">
+    <form #login="ngForm" (ngSubmit)="onSubmit(login.value)">
+      <div class="mb-3">
+        <label class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" ngModel />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" ngModel />
+      </div>
+
+      <button type="submit" class="btn btn-secondary mb-3">Submit</button>
+      <div class="mb-3">
+        <a routerLink="/signup">Don't have account sign up here</a>
+      </div>
+    </form>
+  </div>
+</div>

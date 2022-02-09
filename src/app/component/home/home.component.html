@@ -1,0 +1,4 @@
+<h1>Hi {{ user | json }}</h1>
+<button (click)="showAll()" *ngIf="flag">Show all</button>
+<app-dash-board [users]="users" *ngIf="flag"></app-dash-board>
+<app-user-profile [id]="id" *ngIf="!flag"></app-user-profile>
